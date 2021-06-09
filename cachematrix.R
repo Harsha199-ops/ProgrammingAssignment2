@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+#Here are two functions makeCacheMatrix and cacheSolve for retreiving our solution
+# makeCacheMatrix consists of four methods set,get,setinv, getinv
 library(MASS)
 makeCacheMatrix <- function(x = matrix()) {
   inv<-NULL
@@ -20,8 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+#cacheSolve function has methods getinv, get, solve, setinv
 cacheSolve <- function(x, ...) {
   inv<-x$getinv()
   if(!is.null(inv)){
